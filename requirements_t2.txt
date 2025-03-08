@@ -1,0 +1,40 @@
+# Drowsiness Detection System
+
+## Overview
+This project detects drowsiness in individuals using a deep learning model trained on image datasets. The system identifies multiple people in an image/video, marks sleeping individuals in red, and estimates their age.
+
+## Features
+- Detects awake/sleeping individuals in real-time.
+- Highlights sleeping individuals in **red**.
+- Estimates and displays the **age** of detected individuals.
+- Shows a pop-up message with the number and ages of sleeping persons.
+- User-friendly **GUI** for real-time detection.
+
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone <repository-link>
+   cd Drowsiness_Detection
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+Run the detection system using:
+```bash
+python drowsiness_detection.py
+```
+
+## Training the Model
+1. Place dataset images in `dataset/train` and `dataset/val`.
+2. Run `model_training.ipynb` in Jupyter Notebook to train the model.
+3. The trained model is saved as `drowsiness_model.h5`.
+
+## Performance Metrics
+- **Confusion Matrix**
+- **Precision & Recall**
+- **Model Accuracy**
+
+

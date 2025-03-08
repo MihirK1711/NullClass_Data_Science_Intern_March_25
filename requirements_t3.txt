@@ -1,0 +1,42 @@
+# Emotion Detection through Voice
+
+## Overview
+This project detects emotions from voice recordings using a deep learning model trained on the TESS dataset. The system processes both recorded and uploaded voice files and classifies emotions.
+
+## Features
+- Identifies emotions from voice recordings.
+- Supports both uploaded voice files and real-time recordings.
+- Works exclusively for female voices and prompts users if an incorrect input is detected.
+- User-friendly **GUI** for easy interaction.
+
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone <repository-link>
+   cd Emotion_Detection
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+Run the detection system using:
+```bash
+python emotion_detection.py
+```
+
+## Training the Model
+1. Place dataset audio files in `dataset/train` and `dataset/val`.
+2. Run `model_training.ipynb` in Jupyter Notebook to train the model.
+3. The trained model is saved as `emotion_model.h5`.
+
+## Performance Metrics
+- **Confusion Matrix**
+- **Precision & Recall**
+- **Model Accuracy**
+
+## Notes
+- Ensure the required audio processing libraries are installed.
+- If the model file (`emotion_model.h5`) is too large, upload it to Google Drive and update the link here.
+
